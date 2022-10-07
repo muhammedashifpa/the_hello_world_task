@@ -1,20 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const ErrorPage = ({text}) => {
+const Message = ({text}) => {
   return (
-    <ErrorPageWrapper>
+    <MessageWrapper>
       <h4>{text?text:'Some message here'}</h4>
-    </ErrorPageWrapper>
+    </MessageWrapper>
   )
 }
 
-export default ErrorPage
+export default Message
 
-const ErrorPageWrapper = styled.div`
+const MessageWrapper = styled.div`
   h4{
     margin: 5rem 0;
-    color: red;
+    color: green;
     text-align: center;
   }
 `

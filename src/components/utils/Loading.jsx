@@ -2,9 +2,8 @@ import React from 'react'
 // import styled from 'styled-components'
 import styled from 'styled-components'
 
-type Props = {}
 
-const Loading = (props: Props) => {
+const Loading = () => {
   return (
     <LoadingWrapper>
         <div data-testid='loading-spinner' className='loading-spinner'/>

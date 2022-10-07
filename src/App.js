@@ -31,18 +31,14 @@ function App() {
   }, [handleObserver,complete]);
 
   return (
-    <div className="App height">
-      <h1>skip: {skip}</h1>
-      <h1>loading: {loading === true? 'true':'false'}</h1>
-      <h1>complete: {complete === true? 'true':'false'}</h1>
-      <div ref={loader} />
-      <button onClick={()=>setSkip(skip=>skip+5)}>assdd</button>
+    <div className="App">
       <ProductList
         data={data} 
         error={error}
         complete={complete}
         loading={loading}
         />
+      <div ref={loader} />
     </div>
   );
 }

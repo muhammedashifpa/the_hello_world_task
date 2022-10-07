@@ -27,7 +27,9 @@ function useFetch(skip) {
             await setData((prev) => [...prev, ...res.data.products]);
             setLoading(false);
         } catch (err) {
-        setError(err);
+            setError(err);
+        }finally{
+            setLoading(false)
         }
     }, [skip]);
 
